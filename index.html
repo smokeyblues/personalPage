@@ -80,13 +80,13 @@
     }
 
     #objective {
-      padding-top: 50vh;
+      padding-top: 30vh;
     }
   </style>
 </head>
 <body>
 
-<nav class="navbar navbar-inverse" id="navbar">
+<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -110,7 +110,7 @@
 
 <div class="jumbotron">
   <div class="container text-left" id="Headline">
-    <img src="assets/MyCaricature.png" class="img-responsive" align="left" style="width:100%" alt="Image" id="myMug">
+    <img src="assets/MyCaricature.png" class="img-responsive" align="left" style="width:100%; padding-top:3%" alt="Image" id="myMug">
     <h1>Hi! I'm Aaron</h1>
 
   </div>
@@ -154,24 +154,29 @@
     </div>
     <div class="col-sm-3">
       <p>Some music...</p>
-      <h4>Song 1</h4>
+      <h4>Song Idea 1</h4>
       <audio controls>
 
         <source src="assets/song2.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
       </audio>
-      <h4>Song 2</h4>
+      <h4>Song Idea 2</h4>
       <audio controls>
         <source src="assets/song1.mp3" type="audio/mpeg">
       </audio>
+      <p>
+        There isn't any lyrics but if you think of something while listening, let me know!
+        <br>We can collaborate and become big pop stars (maybe).
+      </p>
     </div>
     <div class="col-sm-3">
       <p>This isn't Prince... it's just a tribute</p>
 
+      <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#princeAnimation" style="font-family:'Permanent Marker'; color:red;">See Awesome Animation</button>
+
       <!-- <p id="canvasP" style="width:33%"></p> -->
       <img src="princePerforming.png" class="img-responsive" style="width:100%" alt="Image">
       <br>
-      <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#princeAnimation" style="font-family:'Permanent Marker'; color:red;">See Awesome Animation</button>
 
       <!-- Modal -->
       <div class="modal fade" id="princeAnimation" role="dialog">
@@ -211,7 +216,7 @@
   </div>
 </div> -->
   <br><br>
-    <footer class="container-fluid text-center" style="height:13vh">
+    <footer class="container-fluid text-center navbar-fixed-bottom" style="height:13vh">
       <a href="https://www.facebook.com/apenni11"><i class="fa fa-3x fa-facebook-official"></i></a>
       <a href="https://www.instagram.com/aaron.l.pennington/"><i class="fa fa-3x fa-instagram"></i></a>
       <a href="https://twitter.com/DrInnovago"><i class="fa fa-3x fa-twitter-square"></i></a>
